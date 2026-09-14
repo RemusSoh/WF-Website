@@ -7,7 +7,7 @@ import { ArrowUpRight } from "lucide-react";
 import { motion } from "motion/react";
 import type { Variants } from "motion/react";
 
-const teamImageSrc = "/images/wf2-team-hero.jpg";
+export const teamImageSrc = "/images/wf2-team-hero.jpg";
 
 export function Hero() {
   const [imageFailed, setImageFailed] = useState(false);
@@ -28,7 +28,7 @@ export function Hero() {
             preload
             sizes="100vw"
             quality={75}
-            className="object-cover object-center"
+            className="object-cover object-[50%_38%]"
             onError={() => setImageFailed(true)}
           />
         )}

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
+import { SmoothScroll } from "@/components/SmoothScroll";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,8 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <body className="min-h-full flex flex-col">
+        <SmoothScroll />
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

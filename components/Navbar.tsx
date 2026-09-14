@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 
 const navItems = [
@@ -13,6 +14,7 @@ const navItems = [
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const updateScrolled = () => setIsScrolled(window.scrollY > 16);
@@ -64,7 +66,9 @@ export function Navbar() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm font-semibold text-white/78 transition hover:text-white"
+              className={`text-sm font-semibold transition hover:text-white ${
+                pathname === item.href ? "text-white" : "text-white/78"
+              }`}
             >
               {item.label}
             </Link>
@@ -105,7 +109,9 @@ export function Navbar() {
             <Link
               key={item.href}
               href={item.href}
-              className="border-b border-white/10 py-4 text-base font-semibold text-white/82 transition hover:text-white"
+              className={`border-b border-white/10 py-4 text-base font-semibold transition hover:text-white ${
+                pathname === item.href ? "text-white" : "text-white/82"
+              }`}
               onClick={() => setIsOpen(false)}
             >
               {item.label}
