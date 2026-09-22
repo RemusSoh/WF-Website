@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { contactDetails } from "./siteContent";
@@ -15,9 +16,13 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:px-8 lg:grid-cols-[1.1fr_0.7fr_0.8fr]">
         <div>
           <Link href="/" className="flex items-center gap-3">
-            <span className="grid h-11 w-11 place-items-center border border-white/20 bg-white text-sm font-black tracking-wide text-[#071827]">
-              WF2
-            </span>
+            <Image
+              src="/images/wf2-logo.png"
+              alt="WF2 Engineering logo"
+              width={283}
+              height={115}
+              className="h-auto w-[88px] shrink-0"
+            />
             <span className="leading-tight">
               <span className="block text-sm font-extrabold uppercase tracking-[0.18em]">
                 WF2 Engineering

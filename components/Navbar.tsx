@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ArrowUpRight, Menu, X } from "lucide-react";
@@ -48,9 +49,13 @@ export function Navbar() {
           className="group flex items-center gap-3"
           onClick={() => setIsOpen(false)}
         >
-          <span className="grid h-11 w-11 place-items-center border border-white/20 bg-white text-sm font-black tracking-wide text-[#071827] transition group-hover:bg-[#f0a45f]">
-            WF2
-          </span>
+          <Image
+            src="/images/wf2-logo.png"
+            alt="WF2 Engineering logo"
+            width={283}
+            height={115}
+            className="h-auto w-[68px] shrink-0 sm:w-[76px]"
+          />
           <span className="leading-tight">
             <span className="block text-sm font-extrabold uppercase tracking-[0.18em] text-white">
               WF2 Engineering
