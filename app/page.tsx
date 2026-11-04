@@ -1,5 +1,4 @@
 import { Achievements } from "@/components/Achievements";
-import { CompanyStats } from "@/components/CompanyStats";
 import { CompanySummary } from "@/components/CompanySummary";
 import { Hero } from "@/components/Hero";
 import Link from "next/link";
@@ -8,9 +7,8 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#071827] text-white">
       <Hero />
-      <CompanySummary />
-      <CompanyStats />
       <Achievements />
+      <CompanySummary />
       <section className="bg-[#102f47] px-5 py-20 text-white sm:px-8">
         <div className="mx-auto grid max-w-7xl gap-8 border border-white/10 bg-[#071827] p-8 sm:p-10 lg:grid-cols-[1fr_auto] lg:items-center">
           <div>

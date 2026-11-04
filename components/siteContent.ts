@@ -1,13 +1,4 @@
-import {
-  Award,
-  Building2,
-  ClipboardCheck,
-  HardHat,
-  Medal,
-  ShieldCheck,
-  Trophy,
-  Wrench,
-} from "lucide-react";
+import { Building2, HardHat, ShieldCheck, Wrench } from "lucide-react";
 
 export const services = [
   {
@@ -109,51 +100,6 @@ export const placeholderStats = [
     value: 25,
     suffix: "+",
     note: "Placeholder - replace with verified WF2 figure",
-  },
-];
-
-export const achievements = [
-  {
-    title: "Safety-Minded Site Delivery",
-    description:
-      "A strong focus on site safety and compliance across active construction environments.",
-    icon: ShieldCheck,
-  },
-  {
-    title: "Industrial & Commercial Track Record",
-    description:
-      "Project experience across industrial and commercial construction, renovation, and upgrading works.",
-    icon: Trophy,
-  },
-  {
-    title: "Reliable Planning & Coordination",
-    description:
-      "Clear communication before work starts, practical sequencing, and dependable supervision on site.",
-    icon: ClipboardCheck,
-  },
-  {
-    title: "Award & Certificate Ready",
-    description:
-      "Dedicated spaces are prepared for real award, certificate, and ceremony photography.",
-    icon: Award,
-  },
-];
-
-export const achievementPhotos = [
-  {
-    title: "Owner Receiving Award",
-    image: "/images/award-owner.jpg",
-    icon: Medal,
-  },
-  {
-    title: "Certificates & Recognition",
-    image: "/images/award-certificate.jpg",
-    icon: Award,
-  },
-  {
-    title: "Team Achievement",
-    image: "/images/award-team.jpg",
-    icon: HardHat,
   },
 ];
 
