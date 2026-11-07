@@ -7,7 +7,6 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#071827] text-white">
       <Hero />
-      <Achievements />
       <CompanySummary />
       <section className="bg-[#102f47] px-5 py-20 text-white sm:px-8">
         <div className="mx-auto grid max-w-7xl gap-8 border border-white/10 bg-[#071827] p-8 sm:p-10 lg:grid-cols-[1fr_auto] lg:items-center">
@@ -39,6 +38,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Achievements />
     </main>
   );
 }
